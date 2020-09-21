@@ -9,7 +9,6 @@
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld'
 import Header from './components/public/Header'
 import Footer from './components/public/Footer'
 
@@ -24,7 +23,6 @@ const config = {
 export default {
   name: 'App',
   components: {
-    HelloWorld,
     Header,
     Footer
   }

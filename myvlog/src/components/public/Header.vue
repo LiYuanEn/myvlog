@@ -1,14 +1,13 @@
 <template>
     <div class="header">
-        <div>
+      <h2 id="mnavh" :class="is_open" @click="show()"><span class="navicon"></span></h2>
             <div class="logo-site-title">
                 <a href="/" class="brand" rel="start" style="opacity: 1;">
                 <span class="logo-line-before"><i class="" style="transform: translateX(100%);"></i></span>
-                <span class="site-title" style="opacity: 1; top: 0px;">Mr.Zhan<span class="is_show">个人博客</span></span>
+                <span class="site-title" style="opacity: 1; top: 0px;">Mr.Li<span class="is_show">个人博客</span></span>
                 <span class="logo-line-after"><i class="" style="transform: translateX(-100%);"></i></span>
                 </a>
             </div>
-        </div>
         <el-menu  menu-trigger="click" :router=true :class="menu_show" class="d-flex header-ul  animated fadeInDown" mode="horizontal" type="flex">
             <nav>
                 <el-menu-item index="/"><i class="iconfont icon-home">首页</i></el-menu-item>
@@ -22,6 +21,9 @@
                 <el-menu-item><i class="iconfont icon-user">关于</i></el-menu-item>
             </nav>
         </el-menu>
+        <el-menu>
+
+        </el-menu>
     </div>
 </template>
 
@@ -31,8 +33,16 @@ export default {
     name: "Header",
     data(){
         return{
-            menu_show:'m-hide'
+          is_open: '',
+          menu_show:'m-hide'
         }
+    },
+    methods: {
+      show() {
+        //this.menu_show = this.menu_show == 'm-hide' ? 'm-show':'m-hide';
+        this.is_open = this.is_open == '' ? 'open' : '';
+        this.menu_show = this.is_open == 'open' ? 'm-show' : 'm-hide';
+      }
     }
     
 }

@@ -83,6 +83,8 @@ export default {
     text-align center
 .me-description
   text-align left 
+.me-description > p
+  padding-top 10px
 .me-tool
     text-align center
     padding-top 10px

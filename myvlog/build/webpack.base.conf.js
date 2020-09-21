@@ -31,7 +31,21 @@ module.exports = {
     }
   },
   module: {
+    loaders: [
+      {
+          test: /\.js$/,
+          exclude: /(node_modules|bower_components)/,
+          loader: 'babel',
+          query: {
+              presets: ['es2015']
+          }
+      }
+  ],
     rules: [
+      {
+        test: /\.less$/,
+        use:['style-loader','css-loader','less-loader']
+      },
       {
         test: /\.vue$/,
         loader: 'vue-loader',

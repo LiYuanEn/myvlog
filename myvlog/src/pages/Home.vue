@@ -2,7 +2,7 @@
     <div class="home">
         <el-container>
             <el-main>
-                
+                <Article></Article>
             </el-main>
             <el-aside  width="30%">
                 <Me></Me>
@@ -15,12 +15,14 @@
 <script>
 import Me from '../components/card/Me'
 import Tags from '../components/card/Tags'
+import Article from '../components/card/article'
 
 export default {
     name:"Home",
     components:{
         Me,
-        Tags
+        Tags,
+        Article
     }
 }
 </script>
