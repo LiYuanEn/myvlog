@@ -4,9 +4,11 @@
             <el-main>
                 <Article></Article>
             </el-main>
-            <el-aside  width="30%">
+            <el-aside  width="25%">
                 <Me></Me>
                 <Tags></Tags>
+                <HoteArticle></HoteArticle>
+                <NewArticle></NewArticle>
             </el-aside>
         </el-container>
     </div>
@@ -16,13 +18,17 @@
 import Me from '../components/card/Me'
 import Tags from '../components/card/Tags'
 import Article from '../components/card/article'
+import HoteArticle from '../components/card/HotArticle'
+import NewArticle from '../components/card/NewArticle'
 
 export default {
     name:"Home",
     components:{
         Me,
         Tags,
-        Article
+        Article,
+        HoteArticle,
+        NewArticle
     }
 }
 </script>
@@ -34,8 +40,6 @@ export default {
     justify-content center
     width 80%
 .el-aside
-      
-      //border 1px solid #cccccc
       margin-top 39px
       padding 0px 10px
 </style>

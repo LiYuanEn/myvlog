@@ -2,7 +2,7 @@
   <div id="app">
     <el-container>
       <el-header><Header></Header></el-header>
-      <el-main id="main"><router-view></router-view></el-main>
+      <el-main><router-view></router-view></el-main>
       <el-footer><Footer></Footer></el-footer>
     </el-container>
   </div>
@@ -40,8 +40,8 @@ export default {
   display flex
   align-items center
   justify-content center
-  .el-main
-    height 815px
+  // .el-main
+  //   height 815px
   .el-header
       height 60px
       position fixed
