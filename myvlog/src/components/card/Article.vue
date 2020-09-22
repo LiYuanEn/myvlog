@@ -4,16 +4,16 @@
     <el-card shadow="always">
         <div>文章标题</div>
         <div>
+          <span>作者</span>
           <span>发表时间</span>
-          <span>更新时间</span>
           <span>分类</span>
-          <span>文本字数</span>
-          <span>阅读时长</span>
+          <span>阅读量</span>
+          <span>评论数</span>
         </div>
         <div>
-            <h2>文章内容：简要</h2>
+          <h2>文章内容：简要</h2>
         </div>
-        <div>阅读全文</div>
+        <div>文章标签</div>
     </el-card>
 </dir>  
 </template>
@@ -32,3 +32,4 @@ export default {
 <style lang="less" scoped>
 
 </style>
+

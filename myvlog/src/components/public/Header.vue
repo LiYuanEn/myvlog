@@ -10,9 +10,9 @@
             </div>
         <el-menu  menu-trigger="click" :router=true :class="menu_show" class="d-flex header-ul  animated fadeInDown" mode="horizontal" type="flex">
             <nav>
-                <el-menu-item index="/"><i class="iconfont icon-home">首页</i></el-menu-item>
-                <el-menu-item index="/text"><i class="iconfont icon-tags">标签</i></el-menu-item>
-                <el-menu-item><i class="iconfont icon-category">分类</i></el-menu-item>
+                <el-menu-item index="/home"><i class="iconfont icon-home">首页</i></el-menu-item>
+                <el-menu-item index="/tags"><i class="iconfont icon-tags">标签</i></el-menu-item>
+                <el-menu-item index="/sort"><i class="iconfont icon-category">分类</i></el-menu-item>
                 <el-menu-item><i class="iconfont icon-archive">归档</i></el-menu-item>
                 <el-menu-item><i class="iconfont icon-comment">留言板</i></el-menu-item>
                 <el-menu-item><i class="iconfont icon-link">友联</i></el-menu-item>
