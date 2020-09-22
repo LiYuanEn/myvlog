@@ -10,13 +10,17 @@
           background-color="white"
           active-text-color="#ffd04b">
           <el-menu-item index="1">
-            <template slot="title">
-              <span>全部</span>
-            </template>
+            <span slot="title">
+              <el-button>
+                <el-link :underline="false">2020年8月</el-link>
+              </el-button>
+            </span>
           </el-menu-item>
           <el-menu-item index="2">
             <span slot="title">
-              <el-link :underline="false">分类一</el-link>
+              <el-button>
+                <el-link :underline="false">2020年8月</el-link>
+              </el-button>
             </span>
           </el-menu-item>
           <el-menu-item index="3">
@@ -27,7 +31,8 @@
           </el-menu-item>
         </el-menu>
       </el-aside>
-      <el-main><Article></Article></el-main>
+      <el-main><Article></Article>
+      </el-main>
     </el-container>
   </div>
 </template>
@@ -36,8 +41,7 @@
 import Article from '../components/card/article'
 
 export default {
-  
-  name: 'Sort',
+  name: 'Archive',
   methods: {
       handleOpen(key, keyPath) {
         console.log(key, keyPath);

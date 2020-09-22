@@ -13,8 +13,8 @@
                 <el-menu-item index="/home"><i class="iconfont icon-home">首页</i></el-menu-item>
                 <el-menu-item index="/tags"><i class="iconfont icon-tags">标签</i></el-menu-item>
                 <el-menu-item index="/sort"><i class="iconfont icon-category">分类</i></el-menu-item>
-                <el-menu-item><i class="iconfont icon-archive">归档</i></el-menu-item>
-                <el-menu-item><i class="iconfont icon-comment">留言板</i></el-menu-item>
+                <el-menu-item index="/archive"><i class="iconfont icon-archive">归档</i></el-menu-item>
+                <el-menu-item index="/messageboard"><i class="iconfont icon-comment">留言板</i></el-menu-item>
                 <el-menu-item><i class="iconfont icon-link">友联</i></el-menu-item>
                 <el-menu-item><i class="iconfont icon-tool">工具</i></el-menu-item>
                 <el-menu-item><i class="iconfont icon-music">音乐站</i></el-menu-item>
