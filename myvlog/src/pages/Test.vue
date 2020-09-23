@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h2>这是测试页面二</h2>
+        <h2>这是登录界面</h2>
     </div>
 </template>
 

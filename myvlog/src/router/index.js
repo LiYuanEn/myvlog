@@ -32,8 +32,33 @@ const routes = [
         path: '/messageboard',
         name: 'MessageBoard',
         component: resolve => require(['../pages/MessageBoard'],resolve)
-
+    },
+    {
+        path: '/links',
+        name: 'Links',
+        component: resolve => require(['../pages/Links'],resolve)
+    },
+    {
+        path: '/tool',
+        name: 'Tool',
+        component: resolve => require(['../pages/Tool'],resolve)
+    },
+    {
+        path: '/music',
+        name: 'Music',
+        component: resolve => require(['../pages/Music'],resolve)
+    },
+    {
+        path: '/about',
+        name: 'About',
+        component: resolve => require(['../pages/About'],resolve)
+    },
+    {
+        path: '/test',
+        name: 'Test',
+        component: resolve => require(['../pages/Test'],resolve)
     }
+    
 ]
 
 export default routes;
